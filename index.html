@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Developer-Portfolio</title>
+  <link  rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">Sarvagya's Portfolio</div>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+        <li><a href="resfin.pdf" target="_blank">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="firstSection">
+      <div class="leftSection">
+        Hi I am <span class="green">Sarvagya</span>, I am a passionate 
+        <span id="element" style="color: greenyellow; font-size: 3rem;"></span>
+      </div>
+      <div class="rightSection">
+        <img src="image/bg.png.png" alt="Developer Image">
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="secondSection">
+      <h1 class="gray">Work Experience</h1>
+      <div class="internship-box"> 
+        <h3>Subject Matter Intern (Maths)</h3>
+        <p class="company">Khare Classes (Remote)</p>
+        <p class="desc">Assisted students by solving maths doubts — May 2023 to Present</p>
+      </div>
+    </section>
+
+    <section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+    <img src="image\my photo.jpg" alt="Sarvagya Singhal" class="profile-pic">
+    </div>
+    <p>
+        Hello! I'm <strong>Sarvagya Singhal</strong>, a B.Tech Computer Science student at <strong>LNCT, Bhopal</strong>. I have a strong passion for web development and backend engineering.
+        <br><br>
+        I enjoy building real-life projects that solve practical problems. Some of my notable projects include a Daily Expense Tracker, Password Generator, and an AccSoft Clone.
+        <br><br>
+        My technical skills include: 
+        <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>Java</strong>, <strong>Spring Boot</strong>, <strong>Node.js</strong>, and <strong>DSA (Leetcode 100+ solved)</strong>.
+        <br><br>
+        I’m currently interning as a <strong>Subject Matter Intern (Maths)</strong> at Khare Classes where I help students solve doubts via Slack.
+        <br><br>
+        I'm focused, consistent, and always ready to learn more and grow in the tech industry.
+    </p>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">My Projects</h2>
+      <div class="project-container">
+        <div class="project-card">
+          <h3>Daily Expense Tracker</h3>
+          <p>A web app to track daily expenses and generate receipts.</p>
+          <a href="https://dhruv3140.github.io/expense-tracker/" target="_blank">Live Demo</a>
+        </div>
+        <div class="project-card">
+          <h3>Password Generator</h3>
+          <p>Generates secure passwords.</p>
+          <a href="https://dhruv3140.github.io/passwordgenerator/" target="_blank">Live Demo</a>
+        </div>
+        <div class="project-card">
+          <h3>Khare Classes Website clone</h3>
+          <p>A Clone Of The Khare Classes Website Interface.</p>
+          <a href="https://dhruv3140.github.io/arisepage/" target="_blank">Live Demo</a>
+        </div>
+        <div class="project-card">
+          <h3>AccSoft Clone</h3>
+          <p>A clone of the LNCT AccSoft login interface.</p>
+          <a href="https://dhruv3140.github.io/acc-login-page/" target="_blank">Live Demo</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:dhruvsinghal166@gmail.com">dhruvsinghal166@gmail.com</a></p>
+      <p>Phone: <a href="tel:+919407183140">+91 9407183140</a></p>
+      <p>GitHub: <a href="https://github.com/dhruv3140" target="_blank">github.com/dhruv3140</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/sarvagya-singhal-154a0a2a1" target="_blank">linkedin.com/in/sarvagya-singhal-154a0a2a1</a></p>
+    </section>
+
+    
+    
+
+
+    <footer>
+      <p>&copy; Sarvagya Singhal</p>
+      <div class="footer-links">
+        <a href="https://github.com/dhruv3140" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/sarvagya-singhal-154a0a2a1" target="_blank">LinkedIn</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer','Web Designer'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+</html>

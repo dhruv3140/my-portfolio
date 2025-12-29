@@ -677,8 +677,36 @@ footer {
   }
 
   .project-container {
-    grid-template-columns: 1fr;
     padding: 10px;
+  }
+
+  /* Contact Section Mobile */
+  .con {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .contact-icon {
+    margin-left: 0;
+  }
+
+  /* Timeline Mobile */
+  .timeline-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .timeline-item {
+    padding-left: 20px;
+  }
+
+  .timeline-dot {
+    left: -22px;
+    /* Adjust for smaller padding/margin */
+    width: 12px;
+    height: 12px;
+    top: 2px;
   }
 }
 

@@ -2,71 +2,203 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Developer-Portfolio</title>
-  <link  rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sarvagya Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Sarvagya Singhal, a B.Tech Computer Science student and AI Engineer specializing in Gemini, Vector Search, and Full Stack Development.">
+  <meta name="keywords"
+    content="Sarvagya Singhal, AI Engineer, Web Developer, Portfolio, Gemini, Pinecone, React, Node.js">
+  <meta name="author" content="Sarvagya Singhal">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dhruv3140.github.io/portfolio/">
+  <meta property="og:title" content="Sarvagya Singhal | AI & Software Engineer">
+  <meta property="og:description"
+    content="Visionary B.Tech Scholar & AI Engineer. Explore my work in Vector Search, Full Stack Web Dev, and DSA.">
+  <meta property="og:image" content="image/my photo.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://dhruv3140.github.io/portfolio/">
+  <meta property="twitter:title" content="Sarvagya Singhal | AI & Software Engineer">
+  <meta property="twitter:description"
+    content="Visionary B.Tech Scholar & AI Engineer. Explore my work in Vector Search, Full Stack Web Dev, and DSA.">
+  <meta property="twitter:image" content="image/my photo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
     <nav>
       <div class="left">Sarvagya's Portfolio</div>
-      <ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact Me</a></li>
-        <li><a href="resfin.pdf" target="_blank">Resume</a></li>
+        <li><a href="sarvagya-resume.pdf" target="_blank">Resume</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="firstSection">
+    <section class="firstSection hidden">
       <div class="leftSection">
-        Hi I am <span class="green">Sarvagya</span>, I am a passionate 
+        Hi I am <span class="green">Sarvagya</span>, I am a passionate
         <span id="element" style="color: greenyellow; font-size: 3rem;"></span>
       </div>
       <div class="rightSection">
-        <img src="image/bg.png.png" alt="Developer Image">
+        <img src="image/bg.png.png" alt="Developer Image" loading="lazy">
       </div>
     </section>
 
     <hr>
 
-    <section class="secondSection">
+    <section class="secondSection hidden">
       <h1 class="gray">Work Experience</h1>
-      <div class="internship-box"> 
-        <h3>Subject Matter Intern (Maths)</h3>
-        <p class="company">Khare Classes (Remote)</p>
-        <p class="desc">Assisted students by solving maths doubts — May 2023 to Present</p>
+      <div class="timeline-container">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="internship-box timeline-content">
+            <h3>Subject Matter Intern (Maths)</h3>
+            <p class="company">Khare Classes (Remote)</p>
+            <p class="desc">Assisted students by solving maths doubts — May 2023 to Present</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="internship-box timeline-content">
+            <h3>Volunteer</h3>
+            <p class="company">Raahat Be The ChangeMaker</p>
+            <p class="desc">September 2024 to Present</p>
+            <a href="https://www.instagram.com/raahatclublnctbhopal?igsh=ZTI4NnBzcnpuY2Zu" target="_blank">About
+              Raahat</a>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="internship-box timeline-content">
+            <h3>AI & Vector Search Engineer</h3>
+            <p class="company">Khare Classes (Remote)</p>
+            <p class="desc">Converting books to vector documents using Gemini & Pinecone for semantic search — Dec 2025
+              to Present</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="about">
-    <h2>About Me</h2>
-    <div class="about-content">
-    <img src="image\my photo.jpg" alt="Sarvagya Singhal" class="profile-pic">
-    </div>
-    <p>
-        Hello! I'm <strong>Sarvagya Singhal</strong>, a B.Tech Computer Science student at <strong>LNCT, Bhopal</strong>. I have a strong passion for web development and backend engineering.
-        <br><br>
-        I enjoy building real-life projects that solve practical problems. Some of my notable projects include a Daily Expense Tracker, Password Generator, and an AccSoft Clone.
-        <br><br>
-        My technical skills include: 
-        <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>Java</strong>, <strong>Spring Boot</strong>, <strong>Node.js</strong>, and <strong>DSA (Leetcode 100+ solved)</strong>.
-        <br><br>
-        I’m currently interning as a <strong>Subject Matter Intern (Maths)</strong> at Khare Classes where I help students solve doubts via Slack.
-        <br><br>
-        I'm focused, consistent, and always ready to learn more and grow in the tech industry.
-    </p>
+    <section id="education" class="hidden">
+      <h1 class="section-title">Education</h1>
+      <div class="timeline-container">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="internship-box timeline-content">
+            <h3>B.Tech in Computer Science</h3>
+            <p class="company">LNCT, Bhopal</p>
+            <p class="desc">Pursuing — 2023 to 2027</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="projects">
+    <section id="services" class="hidden">
+      <h1 class="section-title">What I Do</h1>
+      <div class="project-container">
+        <div class="project-card service-card">
+          <h3>Frontend Development</h3>
+          <p>Building responsive, interactive UIs with HTML, CSS, and modern tech stacks.</p>
+        </div>
+        <div class="project-card service-card">
+          <h3>Backend Engineering</h3>
+          <p>Developing robust APIs and managing databases with Node.js, Express, and MongoDB.</p>
+        </div>
+        <div class="project-card service-card">
+          <h3>AI Engineering</h3>
+          <p>Working with LLMs (Gemini), Vector Databases (Pinecone), and RAG architectures.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="hidden">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="image\my photo.jpg" alt="Sarvagya Singhal" class="profile-pic" loading="lazy">
+      </div>
+      <p>
+        I am <strong>Sarvagya Singhal</strong>, a visionary B.Tech Computer Science student at <strong>LNCT,
+          Bhopal</strong>, bridging the gap between robust software engineering and the frontier of Artificial
+        Intelligence.
+        <br><br>
+        Currently innovating as an <strong>AI & Vector Search Engineer</strong>, I architect intelligent solutions using
+        Google Gemini and Vector Databases to transform how data is accessed and understood. My passion lies in building
+        scalable backends and intuitive interfaces that solve real-world problems.
+        <br><br>
+        With a strong foundation in <strong>Data Structures (200+ Problems)</strong> and a diverse suite of projects, I
+        don't just write code—I craft digital experiences. I am focused, consistent, and driven to make an impact in the
+        tech industry.
+        <br><br>
+      </p>
+    </section>
+
+    <section id="skills" class="hidden">
+      <h2 class="section-title">Skills</h2>
+      <div class="internship-box">
+        <h3>Technical Skills</h3>
+        <div class="skills-container">
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">Express.js</span>
+          <span class="skill-tag">DSA (200+ Solved)</span>
+          <span class="skill-tag">Effective Use Of AI Tools</span>
+          <!-- <span class="skill-tag"></span> -->
+          <span class="skill-tag">Git/GitHub</span>
+        </div>
+      </div>
+      <div class="internship-box" style="margin-top: 30px;">
+        <h3>Soft Skills</h3>
+        <div class="skills-container">
+          <span class="skill-tag">English Proficiency</span>
+          <span class="skill-tag">Effective Communication</span>
+          <span class="skill-tag">Leadership</span>
+          <span class="skill-tag">Problem Solving</span>
+          <span class="skill-tag">Active Listening</span>
+          <span class="skill-tag">Team Work</span>
+          <span class="skill-tag">Time Management</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="hidden">
       <h2 class="section-title">My Projects</h2>
       <div class="project-container">
         <div class="project-card">
           <h3>Daily Expense Tracker</h3>
           <p>A web app to track daily expenses and generate receipts.</p>
           <a href="https://dhruv3140.github.io/expense-tracker/" target="_blank">Live Demo</a>
+        </div>
+        <div class="project-card">
+          <h3>A retro Space war Game</h3>
+          <p>A web based space war game.</p>
+          <a href="https://ritwik-upadhyay.github.io/StarBlaze/" target="_blank">Live Demo</a>
+        </div>
+        <div class="project-card">
+          <h3>My personal PortFolio Website</h3>
+          <p>A website which tells about me</p>
+          <a href="https://dhruv3140.github.io/my-portfolio/" target="_blank">Live Demo</a>
         </div>
         <div class="project-card">
           <h3>Password Generator</h3>
@@ -96,20 +228,86 @@
       </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:dhruvsinghal166@gmail.com">dhruvsinghal166@gmail.com</a></p>
-      <p>Phone: <a href="tel:+919407183140">+91 9407183140</a></p>
-      <p>GitHub: <a href="https://github.com/dhruv3140" target="_blank">github.com/dhruv3140</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/sarvagya-singhal-154a0a2a1" target="_blank">linkedin.com/in/sarvagya-singhal-154a0a2a1</a></p>
+    <section id="achievements" class="hidden">
+      <h1 class="section-title">Achievements</h1>
+      <div class="project-container">
+        <div class="project-card stat-card">
+          <h3>200+</h3>
+          <p>Dsa Problems Solved</p>
+        </div>
+        <div class="project-card stat-card">
+          <h3>5+</h3>
+          <p>Projects Completed</p>
+        </div>
+        <div class="project-card stat-card">
+          <h3>1+</h3>
+          <p>Years Experience</p>
+        </div>
+      </div>
     </section>
 
-    
-    
+    <section id="contact" class="hidden">
+      <h2>Let's Connect</h2>
+      <p>I am Always Interested in new Opportunites,<br>whether that's working or an exciting project,<br>joining a
+        great team, or just havig a<br>conversation about technology and design.</p>
+      <div class="con">
+        <p>Email: <a href="mailto:dhruvsinghal166@gmail.com">dhruvsinghal166@gmail.com</a></p>
+        <span class="contact-icon">&#9993;</span>
+      </div>
+      <div class="con">
+        <p>Phone: <a href="tel:+919407183140">+91 9407183140</a></p>
+        <span class="contact-icon">&#9742;</span>
+      </div>
+      <div class="con">
+        <p>GitHub: <a href="https://github.com/dhruv3140" target="_blank">github.com/dhruv3140</a></p>
+        <span class="contact-icon"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"
+            style="width: 34px; filter: invert(1);"></span>
+      </div>
+      <div class="con">
+        <p>LinkedIn: <a href="https://linkedin.com/in/sarvagya-singhal-154a0a2a1"
+            target="_blank">linkedin.com/in/sarvagya-singhal</a></p>
+        <span class="contact-icon" style="font-size:34px;">&#x1F4BC;</span>
+      </div>
+    </section>
+
+    <section id="getintouch" class="hidden">
+      <div class="getintouch-container">
+        <h2>Get In Touch</h2>
+        <p>Let's discuss your next project or just say hello</p>
+        <div class="form-wrapper">
+          <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+            <input type="hidden" name="access_key" value="92fd1868-a0d6-407a-9f0e-9f33a6496315">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Enter your first name" required>
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Enter your last name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project Enquiry" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+                required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
 
 
     <footer>
-      <p>&copy; Sarvagya Singhal</p>
+      <p>&copy; 2025 Sarvagya Singhal. All Rights Reserved</p>
       <div class="footer-links">
         <a href="https://github.com/dhruv3140" target="_blank">GitHub</a>
         <a href="https://www.linkedin.com/in/sarvagya-singhal-154a0a2a1" target="_blank">LinkedIn</a>
@@ -120,9 +318,79 @@
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script>
     var typed = new Typed('#element', {
-      strings: ['Web Developer','Web Designer'],
-      typeSpeed: 50,
+      strings: ['Web Developer', 'Web Designer'],
+      typeSpeed: 22,
+    });
+
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+    }));
+
+    // Scroll Reveal Animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    });
+
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((el) => observer.observe(el));
+
+    // Web3Forms Submission Handler
+    const contactForm = document.getElementById('contactForm');
+
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const submitBtn = document.querySelector('.submit-btn');
+      const originalText = submitBtn.innerText;
+
+      submitBtn.innerText = 'Sending...';
+      submitBtn.style.opacity = '0.7';
+
+      const formData = new FormData(contactForm);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: json
+      })
+        .then(async (response) => {
+          let json = await response.json();
+          if (response.status == 200) {
+            alert("Thank you! Your message has been sent successfully.");
+            contactForm.reset();
+          } else {
+            console.log(response);
+            alert("Something went wrong! Please try again.");
+          }
+        })
+        .catch(error => {
+          console.log(error);
+          alert("Something went wrong! Please try again.");
+        })
+        .finally(() => {
+          submitBtn.innerText = originalText;
+          submitBtn.style.opacity = '1';
+        });
     });
   </script>
 </body>
+
 </html>
